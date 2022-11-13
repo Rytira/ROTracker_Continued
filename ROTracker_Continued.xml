@@ -1,6 +1,6 @@
 <GuiXml>
 	<Controls>
-		<Control name="ROTrackerPanel" resizeToFitDescendents="true" hidden="true" virtual="true">
+		<Control name="ROTracker_ContinuedPanel" resizeToFitDescendents="true" hidden="true" virtual="true">
 			<Controls>
 				<Backdrop name="$(parent)Backdrop">
 					<Anchor point="LEFT" />
@@ -21,9 +21,9 @@
 			</Controls>
 		</Control>
 
-		<TopLevelControl name="ROTrackerFrame" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" hidden="false">
+		<TopLevelControl name="ROTracker_ContinuedFrame" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" hidden="false">
 			<OnMoveStop>
-				ROTracker.OnMoveStop()
+				ROTracker_Continued.OnMoveStop()
 			</OnMoveStop>
 
 			<Controls>

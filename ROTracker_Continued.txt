@@ -4,18 +4,18 @@
 ; other countries. All rights reserved.
 ; https://account.elderscrollsonline.com/add-on-terms
 
-## Title: RO Tracker
+## Title: RO Tracker Continued
 ## Description: Tracks who in your group has major slayer
-## Author: @Kalinfe
-## Version: 1.1.2
-## APIVersion: 100028
-## SavedVariables: ROTrackerSavedVariables
+## Author: @Kalinfe, @Rytira
+## Version: 1.1.3
+## APIVersion: 101036
+## SavedVariables: ROTracker_ContinuedSavedVariables
 ## DependsOn: LibAddonMenu-2.0
 
-ROTracker.lua
-ROTrackerData.lua
-ROTrackerMenu.lua
-ROTracker.xml
+ROTracker_Continued.lua
+ROTracker_ContinuedData.lua
+ROTracker_ContinuedMenu.lua
+ROTracker_Continued.xml
 
 ; Changelog:
 ;
@@ -30,3 +30,8 @@ ROTracker.xml
 ;
 ; Version 1.1.2 (2021/29/9)
 ; * Fixed not showing bug
+;
+; Version 1.1.3 (2022/13/11)
+; * Fixed LibAddonMenu crash
+; * Fixed that the timer to next heavy attack could get stuck at -1
+; * Fixed that the number of group members to receive RO could go out of sync with group members (e.g. to -1)
